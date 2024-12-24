@@ -1,5 +1,6 @@
 ## START
 
+yarn
 1. Создать ".env" в "/apps/server/.env", пример "/apps/server/env.example". Порт не менять!!!
 2. "yarn yarn_front"
 3. "yarn yarn_api"
