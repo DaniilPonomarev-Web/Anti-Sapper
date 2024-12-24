@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  db:
+    container_name: game-postgres
+    build:
+      context: .
+      dockerfile: ./db/Dockerfile.postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASS}
+      TZ: Asia/Yekaterinburg
+    volumes:
+      - ./docker-data/postgres:/var/lib/postgresql/data
+      - ./db/game.sql:/docker-entrypoint-initdb.d/game.sql
+    networks:
+      - game-network
+
+networks:
+  game-network:
+    driver: bridge

@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/shared/(.*)": "<rootDir>/../libs/shared/src/$1",
+    "@app/shared": "<rootDir>/../libs/shared/src",
+    "@app/core/(.*)": "<rootDir>/../libs/core/src/$1",
+    "@app/core": "<rootDir>/../libs/core/src",
+    "@app/diamond/(.*)": "<rootDir>/../libs/diamond/src/$1",
+    "@app/diamond": "<rootDir>/../libs/diamond/src",
+    "@app/player/(.*)": "<rootDir>/../libs/player/src/$1",
+    "@app/player": "<rootDir>/../libs/player/src"
+  }
+}
