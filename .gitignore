@@ -125,5 +125,6 @@ web_modules/
 
 apps/server/.env
 apps/server/node_modules/
+apps/server/dist/
 apps/server/docker-data/
 apps/frontend/node_modules/
