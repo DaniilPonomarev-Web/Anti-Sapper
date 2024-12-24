@@ -1,0 +1,21 @@
+{
+  "name": "Anti-Sapper",
+  "version": "1.0.0",
+  "description": "game for test",
+  "main": "index.js",
+  "repository": "https://github.com/DaniilPonomarev-Web/Anti-Sapper.git",
+  "author": "PonomarevDaniil <84072104+DaniilPonomarev-Web@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/cli": "^5.0.8",
+    "axios": "^1.7.9",
+    "nest-cli": "^0.0.5"
+  },
+  "scripts": {
+    "front": "cd apps/frontend && yarn serve",
+    "api": "cd apps/server && yarn start:dev",
+    "docker": "cd apps/server && docker-compose up --build -d",
+    "yarn_front": "cd apps/frontend && yarn ",
+    "yarn_api": "cd apps/server && yarn"
+  }
+}
